@@ -1,1 +1,62 @@
-Hey,beauty!
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title>购物的中心，娱乐的中心</title>
+		<style type="text/css">
+			.css {
+				font-family: "楷体";
+				font-style: italic;
+				font-weight: 100;
+				font-size: 30px;
+				color: #9900ff;
+				text-decoration: blink;
+			}
+			td{
+				border: 1;
+			}
+		</style>
+		<script type="text/javascript">
+			function checkAll(){
+				var ee=document.getElementsByName("product");
+				for(var q=0;q<ee.length;q++){
+					ee[q].checked=document.getElementById("all").checked;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1 align="center" id="css">娱乐的中心，购物的中心</h1>
+		<table width="100%" height="700" cellspacing="0" border="1">
+			<caption class="css"><a href="h037.html">淘宝</a></caption>
+			<th align="center" valign="center"><input id="all" type="checkbox" value="全选" onclick="checkAll()" />全选</th>
+			<th align="center" valign="center">商品图片</th>
+			<th align="center" valign="center">商品名称/出售者/联系方式</th>
+			<th align="center" valign="center">价格</th><hr />
+			<tr align="center" valign="middle">
+				<td><input type="checkbox" value="1" name="product"/></td>
+				<td><img src="innocence.png" width="100" height="100"/></td>
+				<td>良种哈士奇，居家必备，人狗情未了<br />出售者：cuter<br />
+				<input name="mail" type="button" value="和我联系，么么哒" onclick="window.open('mailto:17803493371@163.com')" />
+				</td>
+				<td>一口价：<br />50 cents</td>
+			</tr>
+			<tr align="center" valign="middle">
+				<td><input type="checkbox" value="2" name="product"/></td>
+				<td><img src="future.jpg" width="100" height="100"/></td>
+				<td>尊贵海景房，八折优惠，土豪专属<br />出售者：lovely baby<br />
+				<input name="mail" type="button" value="和我联系，么么哒" onclick="window.open('mailto:17803493371@163.com')" />
+				<td>一口价：<br />1499 W</td>
+				</td>
+			</tr>
+			<tr align="center" valign="middle">
+				<td><input type="checkbox" value="3" name="product"/></td>
+				<td><img src="music.jpg" width="100" height="100"/></td>
+				<td>超大音响，三合一套装<br />出售者：golden dancer<br />
+				<input name="mail" type="button" value="和我联系，么么哒" onclick="window.open('mailto:17803493371@163.com')" />
+				<td>一口价：<br />89 dollars</td>
+				</td>
+			</tr>
+		</table><hr />
+	</body>
+</html>
